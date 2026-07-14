@@ -1,0 +1,88 @@
+{
+  "id": "tblGGLa2q8ttpwWExFJ",
+  "name": "Bàn bi-a",
+  "description": null,
+  "dbTableName": "\"bsergmh3mri6WbeJ1up\".\"tblGGLa2q8ttpwWExFJ\"",
+  "fields": [
+    {
+      "id": "fldChsrSqu7sDUDnUqY",
+      "name": "Tên bàn",
+      "dbFieldName": "Ten_ban",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fld6UByLrmrR3le7hdG",
+      "name": "Số bàn",
+      "dbFieldName": "So_ban",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldmuAfVaWfbObXAF9M",
+      "name": "Hoạt động",
+      "dbFieldName": "Hoat_dong",
+      "type": "checkbox",
+      "description": null,
+      "options": {},
+      "cellValueType": "boolean",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fld8l4ypdnrl8XgxovD",
+      "name": "Giá theo giờ",
+      "dbFieldName": "Gia_theo_gio",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "type": "currency",
+          "precision": 0,
+          "symbol": "₫"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldX1xeDcJoN3bGEUji",
+      "name": "Phiên chơi",
+      "dbFieldName": "Phien_choi",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "oneMany",
+        "foreignTableId": "tbllSo444lJ3SMbpH1v",
+        "lookupFieldId": "fldaC1o0HynTEMwFBIR",
+        "isOneWay": false,
+        "fkHostTableName": "bsergmh3mri6WbeJ1up.tbllSo444lJ3SMbpH1v",
+        "selfKeyName": "__fk_fldJnNLjMHfO1eqKCcH",
+        "foreignKeyName": "__id",
+        "symmetricFieldId": "fldJnNLjMHfO1eqKCcH"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": true
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "id": "tbllSo444lJ3SMbpH1v",
+  "name": "Phiên chơi",
+  "description": null,
+  "dbTableName": "\"bsergmh3mri6WbeJ1up\".\"tbllSo444lJ3SMbpH1v\"",
+  "fields": [
+    {
+      "id": "fldaC1o0HynTEMwFBIR",
+      "name": "Mã phiên",
+      "dbFieldName": "Ma_phien",
+      "type": "singleLineText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldaU4zPEQzqYfLlb2c",
+      "name": "Số phút",
+      "dbFieldName": "So_phut",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "type": "decimal",
+          "precision": 2
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldKaaSI9Dm1XhJuC40",
+      "name": "Ghi chú",
+      "dbFieldName": "Ghi_chu",
+      "type": "longText",
+      "description": null,
+      "options": {},
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldXpEZNRxJ37TFO8Vb",
+      "name": "Giờ kết thúc",
+      "dbFieldName": "Gio_ket_thuc",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "D/M/YYYY",
+          "time": "HH:mm",
+          "timeZone": "Asia/Bangkok"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldb9jIWXpjJsrxA6wz",
+      "name": "Thành tiền",
+      "dbFieldName": "Thanh_tien",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "type": "currency",
+          "precision": 0,
+          "symbol": "₫"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldKmFOXV7w4i5sldat",
+      "name": "Giờ bắt đầu",
+      "dbFieldName": "Gio_bat_dau",
+      "type": "date",
+      "description": null,
+      "options": {
+        "formatting": {
+          "date": "D/M/YYYY",
+          "time": "HH:mm",
+          "timeZone": "Asia/Bangkok"
+        }
+      },
+      "cellValueType": "dateTime",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldbNAWsIo03xP6UQlD",
+      "name": "Trạng thái",
+      "dbFieldName": "Trang_thai",
+      "type": "singleSelect",
+      "description": null,
+      "options": [
+        "Đang chơi",
+        "Đã kết thúc"
+      ],
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldDDzeCCZRkIkV8zi6",
+      "name": "Đơn giá theo giờ",
+      "dbFieldName": "Don_gia_theo_gio",
+      "type": "number",
+      "description": null,
+      "options": {
+        "formatting": {
+          "type": "currency",
+          "precision": 0,
+          "symbol": "₫"
+        }
+      },
+      "cellValueType": "number",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    },
+    {
+      "id": "fldJnNLjMHfO1eqKCcH",
+      "name": "Bàn",
+      "dbFieldName": "Ban",
+      "type": "link",
+      "description": null,
+      "options": {
+        "relationship": "manyOne",
+        "foreignTableId": "tblGGLa2q8ttpwWExFJ",
+        "lookupFieldId": "fldChsrSqu7sDUDnUqY",
+        "isOneWay": false,
+        "fkHostTableName": "bsergmh3mri6WbeJ1up.tbllSo444lJ3SMbpH1v",
+        "selfKeyName": "__id",
+        "foreignKeyName": "__fk_fldJnNLjMHfO1eqKCcH",
+        "symmetricFieldId": "fldX1xeDcJoN3bGEUji"
+      },
+      "cellValueType": "string",
+      "isLookup": null,
+      "isComputed": null,
+      "isMultipleCellValue": false
+    }
+  ]
+}

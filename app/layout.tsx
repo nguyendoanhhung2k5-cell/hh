@@ -1,0 +1,31 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { Toaster } from "@/components/ui/sonner"
+import "./globals.css"
+import { ErrorReporter, ConsoleReporter, ReactErrorBoundary } from "@/components/error-reporter"
+import { AppAnalytics } from "@/components/app-analytics"
+
+export const metadata: Metadata = {
+  title: "XE ĐIỆN BÀ VƯƠNG",
+  description: "Quản lý bàn chơi, phiên chơi và doanh thu quán bi-a.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="vi">
+      <body className="font-sans antialiased">
+        <ReactErrorBoundary>
+          {children}
+        </ReactErrorBoundary>
+        <Toaster />
+        <ErrorReporter />
+        <ConsoleReporter />
+        <AppAnalytics />
+      </body>
+    </html>
+  );
+}
